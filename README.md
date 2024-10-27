@@ -39,3 +39,34 @@ Clone the repository and install the dependencies:
 git clone https://github.com/your-username/fashion-mnist-classification.git
 cd fashion-mnist-classification
 pip install -r requirements.txt
+```
+### Running the Code
+Open the Jupyter Notebook:
+
+jupyter notebook fashion_mnist_classification.ipynb
+Run each cell sequentially, following along with the comments and visualizations.
+
+### Code Walkthrough
+Data Loading and Preprocessing: Loads Fashion MNIST dataset, splits it into training, validation, and test sets, normalizes pixel values, and flattens each image into a 784-dimensional vector.
+Model Architecture: Uses a dense neural network with batch normalization and dropout layers to prevent overfitting.
+Model Training: Includes early stopping and learning rate scheduler callbacks for optimal training and faster convergence.
+Evaluation: Displays the test accuracy, classification report, and confusion matrix. Additionally, it visualizes precision, recall, and F1-score per class, as well as training and validation accuracy/loss curves.
+### Expected Results
+The model achieved:
+
+Test Accuracy: 90%
+
+### Dependencies
+TensorFlow
+NumPy
+Matplotlib
+Seaborn
+Pandas
+scikit-learn
+For a complete list of dependencies, see the requirements.txt file.
+
+### License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+### Acknowledgments
+The Fashion MNIST dataset is provided by Zalando Research, and this project was built using Keras with TensorFlow as the backend.
